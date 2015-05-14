@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  LA class6 homework
+//  LA CollectionView
 //
 //  Created by blesssecret on 5/14/15.
 //  Copyright (c) 2015 network. All rights reserved.
