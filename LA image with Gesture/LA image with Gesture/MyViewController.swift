@@ -35,10 +35,10 @@ class MyViewController: UIViewController {
     }
     
     func updateScale(recognier: UIPinchGestureRecognizer){
-        if recognier.state == .Began{
+        if recognier.state == UIGestureRecognizerState.Began{
             oldFrame = self.imageView.frame
         }
-        if recognier.state == UIGestureRecognizerState.Changed{
+        if recognier.state == .Changed{
             
             var scale = recognier.scale
             let startx = (oldFrame.width - (oldFrame.width) * scale)/2 + oldFrame.origin.x
@@ -47,7 +47,7 @@ class MyViewController: UIViewController {
             let height = oldFrame.height * scale
             self.imageView.frame = CGRectMake(startx, starty, width, height)
         }
-        else if recognier.state == UIGestureRecognizerState.Ended{
+        else if recognier.state == .Ended{
             //            UIView.animateWithDuration(3.0, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {self.imageView.frame=CGRectMake(0, 0, 100, 100)}, completion: nil)
         }
     }
