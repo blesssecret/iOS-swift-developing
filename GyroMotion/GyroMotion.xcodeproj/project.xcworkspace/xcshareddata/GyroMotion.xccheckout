@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>917C0F58-165A-4D7E-A8FB-C8DDF18D0C7E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GyroMotion</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AF3F17B9D63DDD785EBF225D425DD3EB97925565</key>
+		<string>https://github.com/zhenhanw/Tep-Front.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GyroMotion/GyroMotion.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AF3F17B9D63DDD785EBF225D425DD3EB97925565</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zhenhanw/Tep-Front.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AF3F17B9D63DDD785EBF225D425DD3EB97925565</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF3F17B9D63DDD785EBF225D425DD3EB97925565</string>
+			<key>IDESourceControlWCCName</key>
+			<string>github</string>
+		</dict>
+	</array>
+</dict>
+</plist>
