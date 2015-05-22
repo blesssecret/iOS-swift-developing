@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F4EEF09F-3BB5-47B9-834E-AD225FEA4104</string>
+	<key>IDESourceControlProjectName</key>
+	<string>chatTableView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1CAA2C676758BF74B7F6FFB588026DA000C1AF5B</key>
+		<string>https://github.com/blesssecret/iOS-swift-developing.git</string>
+		<key>AF3F17B9D63DDD785EBF225D425DD3EB97925565</key>
+		<string>https://github.com/zhenhanw/Tep-Front.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>chatTableView/chatTableView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1CAA2C676758BF74B7F6FFB588026DA000C1AF5B</key>
+		<string>../../..</string>
+		<key>AF3F17B9D63DDD785EBF225D425DD3EB97925565</key>
+		<string>../../../../github</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/blesssecret/iOS-swift-developing.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1CAA2C676758BF74B7F6FFB588026DA000C1AF5B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AF3F17B9D63DDD785EBF225D425DD3EB97925565</string>
+			<key>IDESourceControlWCCName</key>
+			<string>github</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1CAA2C676758BF74B7F6FFB588026DA000C1AF5B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-swift-developing</string>
+		</dict>
+	</array>
+</dict>
+</plist>
