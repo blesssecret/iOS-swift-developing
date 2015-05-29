@@ -5,24 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>917C0F58-165A-4D7E-A8FB-C8DDF18D0C7E</string>
+	<string>3133FFB1-5C04-45C1-8B1D-A69D84141D15</string>
 	<key>IDESourceControlProjectName</key>
-	<string>GyroMotion</string>
+	<string>PickerView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1CAA2C676758BF74B7F6FFB588026DA000C1AF5B</key>
 		<string>https://github.com/blesssecret/iOS-swift-developing.git</string>
-		<key>AF3F17B9D63DDD785EBF225D425DD3EB97925565</key>
-		<string>https://github.com/zhenhanw/Tep-Front.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>GyroMotion/GyroMotion.xcodeproj</string>
+	<string>PickerView/PickerView.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1CAA2C676758BF74B7F6FFB588026DA000C1AF5B</key>
 		<string>../../..</string>
-		<key>AF3F17B9D63DDD785EBF225D425DD3EB97925565</key>
-		<string>../../../../github</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/blesssecret/iOS-swift-developing.git</string>
@@ -32,14 +28,6 @@
 	<string>1CAA2C676758BF74B7F6FFB588026DA000C1AF5B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AF3F17B9D63DDD785EBF225D425DD3EB97925565</string>
-			<key>IDESourceControlWCCName</key>
-			<string>github</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

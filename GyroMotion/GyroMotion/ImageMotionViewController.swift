@@ -19,7 +19,8 @@ class ImageMotionViewController: UIViewController {
     var oldPosition:CGPoint!
     var oldFrame:CGRect!
     lazy var motionManager = CMMotionManager()
-    
+    var progressLayer: CAShapeLayer!
+    var lineLayer: CAGradientLayer!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,8 +52,26 @@ class ImageMotionViewController: UIViewController {
             minFrame = CGRectMake(screenWidth/2 - w/2, 0, w, screenHeight)
         }
         
+        self.displayLine()
         // Do any additional setup after loading the view.
     }
+    func displayLine(){
+        self.progressLayer = CAShapeLayer()
+        self.progressLayer.path = changePath().CGPath
+        self.progressLayer.strokeColor = UIColor.whiteColor().CGColor
+        self.progressLayer.lineWidth = 3.0
+        self.view.layer.addSublayer(self.progressLayer)
+    }
+    func changePath()->UIBezierPath{
+        var path = UIBezierPath()
+        let lineLength = screenWidth * screenWidth / imageView.frame.width
+        let startOfLine = (-imageView.frame.origin.x) * screenWidth / imageView.frame.width
+        path.moveToPoint(CGPoint(x: startOfLine, y: screenHeight - 4))
+        path.addLineToPoint(CGPoint(x: startOfLine + lineLength, y:screenHeight - 4))
+        path.stroke()
+        return path
+    }
+    
     func tapOnce(recognier : UITapGestureRecognizer){
         self.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -77,6 +96,8 @@ class ImageMotionViewController: UIViewController {
                 if startx + width < screenWidth { startx = screenWidth - width}
                 self.imageView.frame = CGRectMake(startx, starty, width, height)
             }
+            //            self.displayScrollBar()
+            self.progressLayer.path = self.changePath().CGPath
         }
         if recognier.state == .Ended{
             //            UIView.animateWithDuration(3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {self.imageView.frame = CGRectMake(0, 0, self.imageWidth, self.screenHeight)}, completion: nil)
@@ -96,6 +117,8 @@ class ImageMotionViewController: UIViewController {
             else if(imageView.frame.origin.x<screenWidth-imageView.frame.width){
                 imageView.frame.origin.x = screenWidth - imageView.frame.width
             }
+            //            self.displayScrollBar()
+            self.progressLayer.path = self.changePath().CGPath
         }
     }
     
@@ -114,6 +137,8 @@ class ImageMotionViewController: UIViewController {
             }
             imageView.frame = CGRectMake(nowX, imageView.frame.origin.y,
                 imageView.frame.width, imageView.frame.height)
+            //            self.displayScrollBar()
+            self.progressLayer.path = self.changePath().CGPath
         }
     }
     
