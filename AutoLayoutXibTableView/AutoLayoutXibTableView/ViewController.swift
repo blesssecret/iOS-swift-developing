@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     
     var myTableView : UITableView!
-    let arrContent = ["abcdpwoerihjwpoeji","abcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoeji","abcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoeji"]
+    let arrContent = ["abcdpwoerihjwpoeji","abcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoeji","abcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejiabcdpwoerihjwpoejerihjwpoeji"]
     let cellIdentifier = "cell1"
     let screenWidth = UIScreen.mainScreen().bounds.width
     let screenHeigth = UIScreen.mainScreen().bounds.height
@@ -51,7 +51,7 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         return cell
     }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let label = UILabel(frame: CGRectMake(0, 0,screenWidth - 0 , CGFloat.max))
+        let label = UILabel(frame: CGRectMake(0, 0,screenWidth - 110 , CGFloat.max))
         label.numberOfLines = 1000
         label.lineBreakMode = NSLineBreakMode.ByWordWrapping
         label.font = UIFont.systemFontOfSize(17)
