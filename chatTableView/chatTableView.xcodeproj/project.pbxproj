@@ -13,12 +13,18 @@
 		B06073901B0C4FE7004957C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B060738F1B0C4FE7004957C3 /* Images.xcassets */; };
 		B06073931B0C4FE7004957C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06073911B0C4FE7004957C3 /* LaunchScreen.xib */; };
 		B060739F1B0C4FE7004957C3 /* chatTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B060739E1B0C4FE7004957C3 /* chatTableViewTests.swift */; };
-		B06073A91B0C51AF004957C3 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06073A81B0C51AF004957C3 /* ChatTableViewCell.swift */; };
+		B06073A91B0C51AF004957C3 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06073A81B0C51AF004957C3 /* CommentTableViewCell.swift */; };
 		B06073B81B0E5982004957C3 /* UserPictureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06073B71B0E5982004957C3 /* UserPictureImageView.swift */; };
 		B06073BA1B0E9EC8004957C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06073B91B0E9EC8004957C3 /* User.swift */; };
 		B06073BC1B0EA038004957C3 /* thumb in Resources */ = {isa = PBXBuildFile; fileRef = B06073BB1B0EA038004957C3 /* thumb */; };
 		B06073BE1B0EA26B004957C3 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06073BD1B0EA26B004957C3 /* Chat.swift */; };
 		B06073C01B0EA31C004957C3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06073BF1B0EA31C004957C3 /* Message.swift */; };
+		B0C191561B0FE5D100120AFA /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C191551B0FE5D100120AFA /* Firebase.framework */; };
+		B0C191581B0FE60A00120AFA /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C191571B0FE60A00120AFA /* libicucore.dylib */; };
+		B0C1915A1B0FE61600120AFA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C191591B0FE61600120AFA /* libc++.dylib */; };
+		B0C1915C1B0FE61F00120AFA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C1915B1B0FE61F00120AFA /* CFNetwork.framework */; };
+		B0C1915E1B0FE62800120AFA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C1915D1B0FE62800120AFA /* Security.framework */; };
+		B0C191601B0FE63300120AFA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C1915F1B0FE63300120AFA /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +48,19 @@
 		B06073981B0C4FE7004957C3 /* chatTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B060739D1B0C4FE7004957C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B060739E1B0C4FE7004957C3 /* chatTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatTableViewTests.swift; sourceTree = "<group>"; };
-		B06073A81B0C51AF004957C3 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		B06073A81B0C51AF004957C3 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		B06073AD1B0CF1BC004957C3 /* chatTableView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chatTableView-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		B06073B71B0E5982004957C3 /* UserPictureImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPictureImageView.swift; sourceTree = "<group>"; };
 		B06073B91B0E9EC8004957C3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B06073BB1B0EA038004957C3 /* thumb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = thumb; sourceTree = "<group>"; };
 		B06073BD1B0EA26B004957C3 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		B06073BF1B0EA31C004957C3 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B0C191551B0FE5D100120AFA /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		B0C191571B0FE60A00120AFA /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		B0C191591B0FE61600120AFA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		B0C1915B1B0FE61F00120AFA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B0C1915D1B0FE62800120AFA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B0C1915F1B0FE63300120AFA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C191601B0FE63300120AFA /* SystemConfiguration.framework in Frameworks */,
+				B0C1915E1B0FE62800120AFA /* Security.framework in Frameworks */,
+				B0C1915C1B0FE61F00120AFA /* CFNetwork.framework in Frameworks */,
+				B0C1915A1B0FE61600120AFA /* libc++.dylib in Frameworks */,
+				B0C191581B0FE60A00120AFA /* libicucore.dylib in Frameworks */,
+				B0C191561B0FE5D100120AFA /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +90,11 @@
 		B060737A1B0C4FE7004957C3 = {
 			isa = PBXGroup;
 			children = (
+				B0C1915F1B0FE63300120AFA /* SystemConfiguration.framework */,
+				B0C1915D1B0FE62800120AFA /* Security.framework */,
+				B0C1915B1B0FE61F00120AFA /* CFNetwork.framework */,
+				B0C191591B0FE61600120AFA /* libc++.dylib */,
+				B0C191571B0FE60A00120AFA /* libicucore.dylib */,
 				B06073851B0C4FE7004957C3 /* chatTableView */,
 				B060739B1B0C4FE7004957C3 /* chatTableViewTests */,
 				B06073841B0C4FE7004957C3 /* Products */,
@@ -92,7 +115,7 @@
 			children = (
 				B06073881B0C4FE7004957C3 /* AppDelegate.swift */,
 				B060738A1B0C4FE7004957C3 /* ViewController.swift */,
-				B06073A81B0C51AF004957C3 /* ChatTableViewCell.swift */,
+				B06073A81B0C51AF004957C3 /* CommentTableViewCell.swift */,
 				B06073B91B0E9EC8004957C3 /* User.swift */,
 				B06073BD1B0EA26B004957C3 /* Chat.swift */,
 				B06073BF1B0EA31C004957C3 /* Message.swift */,
@@ -108,6 +131,7 @@
 		B06073861B0C4FE7004957C3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B0C191551B0FE5D100120AFA /* Firebase.framework */,
 				B06073BB1B0EA038004957C3 /* thumb */,
 				B06073AD1B0CF1BC004957C3 /* chatTableView-Bridging-Header.h */,
 				B06073871B0C4FE7004957C3 /* Info.plist */,
@@ -233,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B06073A91B0C51AF004957C3 /* ChatTableViewCell.swift in Sources */,
+				B06073A91B0C51AF004957C3 /* CommentTableViewCell.swift in Sources */,
 				B06073BE1B0EA26B004957C3 /* Chat.swift in Sources */,
 				B060738B1B0C4FE7004957C3 /* ViewController.swift in Sources */,
 				B06073B81B0E5982004957C3 /* UserPictureImageView.swift in Sources */,
@@ -367,9 +391,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/chatTableView",
+				);
 				INFOPLIST_FILE = chatTableView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "chatTableView-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -381,9 +410,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/chatTableView",
+				);
 				INFOPLIST_FILE = chatTableView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "chatTableView-Bridging-Header.h";
 			};

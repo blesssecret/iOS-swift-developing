@@ -14,4 +14,6 @@
 //#import <UUMessgeFrame>
 //#import <UUProgressHUD.h>
 
+#import <Firebase/Firebase.h>
+
 #endif

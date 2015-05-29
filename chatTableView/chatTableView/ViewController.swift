@@ -13,10 +13,19 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     var myTableView : UITableView!
     let screenWidth = UIScreen.mainScreen().bounds.width
     let screenHeight = UIScreen.mainScreen().bounds.height
-    var arrString = ["fsadfwfwerjpsofjpaogsidjfgaosidjfoapsdifjaopsdjfiospadhjfopsidhjvzxphcvapsfuodhfpasouidhvpsfoaudhaspdouhvasfdpouhvaspdouhvadopsuhvaspduihvpisadhfogsapdjfhoipweu5r9832457120-834u-2039158u129-034tu4-w0ujfiopref", "fasfdasd", "q", "12r04fhy2089q4yf98weuf9-q2ue4f9-8ywhf980waryfg908q42yuf9-8qweuf-y948euyf-89wqugf9q8wyg0ryfg89wryufgw9r8f"]
+    var arrString = ["fsadfwfwerjpsofjpaogsidjfgaosidjfoapsdifjaopsdjfiospadhjfopsidhjvzxphcvapsfuodhfpasouidhvpsfoaudhaspdouhvasfdpouhvaspdouhvadopsuhvaspduihvpisadhfogsapdjfhoipweu5r9832457120-834u-2039158u129-034tu4-w0ujfiopref", "fasfdasd", "q", "12r04fhy2089q4yf98weuf9-q2ue4f9-8ywhf980waryf908q42yuf9-8qweuf-y948euyf-89wqugf9q8wyg0ryfg89wryufgw9r8f"]
     let cellIdentifier = "myCell"
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Create a reference to a Firebase location
+        var myRootRef = Firebase(url:"https://popping-torch-9613.firebaseio.com/")
+        // Write data to Firebase
+        myRootRef.setValue("Do you have data? You'll love Firebase.")
+        // Read data and react to changes
+        myRootRef.observeEventType(.Value, withBlock: {
+            snapshot in
+            println("\(snapshot.key) -> \(snapshot.value)")
+        })
         
         myTableView = UITableView(frame: CGRectMake(0, 10, screenWidth, screenHeight), style: UITableViewStyle.Plain)
         myTableView.delegate = self
@@ -25,14 +34,14 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         myTableView.separatorInset.left = chatTableViewCellInsetLeft
         myTableView.registerClass(ChatTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         
-        self.view.addSubview(myTableView)
+//        self.view.addSubview(myTableView)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
-    
+
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ChatTableViewCell
         /*cell.labelText.text = arrString[indexPath.row]
@@ -57,7 +66,7 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
         label.font = UIFont.systemFontOfSize(15)
         label.text = arrString[indexPath.row]
         label.sizeToFit()
-        
+        f
         return label.frame.height+50
     }
     
